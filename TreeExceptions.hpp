@@ -6,6 +6,9 @@
 #define BINARYREEPROJECT_TREEEXCEPTIONS_HPP
 #include <iostream>
 #define WrongBypass 0
+#define NoSuchElement 1
+#define WrongInput 2
+
 class TreeError: std::exception{
 private:
     static const char* MatrixErrorMsg (int msg){
@@ -13,6 +16,15 @@ private:
         if (msg == WrongBypass){
 
             auto string = "Bypass is wrong\n";
+            return string;
+        }if (msg == NoSuchElement){
+
+            auto string = "No Such Element\n";
+            return string;
+        }
+        if (msg == WrongInput){
+
+            auto string = "Wrong Input\n";
             return string;
         }
 
