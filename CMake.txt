@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 project(BinaryReeProject)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(BinaryReeProject main.cpp BinaryTree.hpp TreeExceptions.hpp)
+add_executable(BinaryReeProject main.cpp BinaryTree.hpp TreeExceptions.hpp ArraySequence.hpp DynamicArray.hpp Sequence.hpp IndexOutOfRange.hpp Tests.hpp TreeInterface.hpp IntTreeInterface.hpp MenuError.hpp FloatTreeinterface.hpp)
